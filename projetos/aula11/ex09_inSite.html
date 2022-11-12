@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9 em site- aula 11(condições)</title>
+    <style>
+        body{
+            margin-left: 30em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1><br>
+    
+    <label>Digite seu país de orígem: </label><input type="text" name="country" id="pais_origem">
+    <input type="button" value="testar" id="testar" onclick="testar()">
+    <div id="res"></div>
+
+<script>
+
+function testar(){
+   var result = document.getElementById('res')
+   var pais = document.getElementById('pais_origem')
+   var pais_o = String(pais.value)
+   result.innerHTML = `Seu país de orígem é <strong>${pais_o}</strong><br>`
+
+   if(pais_o == 'Brasil'){
+    result.innerHTML += `Você é Brasileiro`
+   } else{
+    result.innerHTML += `Você é estrangeiro`
+   }
+}
+
+
+</script>
+
+</body>
+</html>

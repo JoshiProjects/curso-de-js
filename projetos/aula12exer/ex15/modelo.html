@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="">
+    <header>
+        <H1>Verificação de idade</H1>
+    </header>
+    <section>
+        <div id="interacaoPart">
+        <label>digite o seu ano de nascimento: <input type="number" name="yearBorn" id="yearBorn"></label>
+
+        <p>Escolha seu Sexo: 
+            <input type="radio" name="resSex"  id="Masc" checked>
+            <label for="Masc">Masculino</label>
+            <input type="radio" name="resSex"  id="femea">
+            <label for="femea">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+        </div>
+        <div id="result">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy;JoshiProjects</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

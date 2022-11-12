@@ -1,0 +1,3 @@
+ sinal de igual sozinho "=" em js é interpretado como recebe
+ dois sinais de igual "==" tem oo significado de igual
+ 

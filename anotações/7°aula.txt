@@ -1,0 +1,8 @@
+Operadores em js
+
+'+' significa somar
+'-' significa subtrair
+'*' significa multiplicação
+'/' significa divisão
+'&' calcula o resto de uma divisão
+'**' significa pontencialização

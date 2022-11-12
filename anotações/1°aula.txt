@@ -1,0 +1,5 @@
+                           ANOTAÇÕES
+
+ *java script é uma tecnologia clientside;
+ 
+ 

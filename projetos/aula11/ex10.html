@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - condições (parte1)</title>
+</head>
+<body>
+    <H1>Sistemas de Multas</H1>
+<label>Digite sua velocidade: </label><input type="number" name="vel" id="vel">
+<input type="button" value="consultar" name="btn_consul" onclick="Consulta()">
+<br>
+<label id="status_label">Status: </label><div id="status"></div>
+<script>
+
+
+ function Consulta(){
+    var velocidade = window.document.getElementById('vel')
+    var velo = Number(velocidade.value)
+    var res_consul = window.document.getElementById('status')
+    
+    res_consul.innerHTML=(`sua velocidade foi ${velo} KM/h<br>`)
+
+    if(velo > 90){
+      
+    res_consul.innerHTML +=(`<p>Você ultrapassou o limite de velocidade.<strong>MULTADO</strong></p>`)
+    } else {
+    
+    res_consul.innerHTML +=(`Você está dentro do limite de velocidade`)
+    }
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+         body{
+            background-color: rgb(36, 0, 56);
+            color: white;
+            font-family: arial;
+            font-size: 18px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito o seguinte: ' + p1.innerText)
+        
+    /*podemos fazer assim tbm  window.document.write(p1.innerText)*/ 
+        /* 
+        var d = document.getElementsByClassName('msg')
+        var d = document.getElementById('msg')
+        var d = document.getElementsByName('msg')
+        var d = document.getElementById('msg')   
+        pra trocar oq está escrito: d.innerText = "cu"
+
+
+        var d = document.querySelector('div#msg') a "# é usada nesse exemplo pois se trata de uma div que possui ID
+        e não uma classe, caso fosse uma "class", usariamos o "."
+        */
+
+        var d = document.querySelector('div#msg')
+        
+    </script>
+</body>
+</html>

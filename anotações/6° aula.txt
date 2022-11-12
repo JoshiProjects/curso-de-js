@@ -1,0 +1,7 @@
+o sinal de "+" serve para concatenação, caso a variavel ou o er.elemento não estiver definido com número
+
+para convertermos uma string para number
+usamos:
+-Number.parseFloat()= float, converte para números reais
+-Number.parseInt()= INt converte e engloba somente números inteiros 
+-number()=nesse,a própria linguagem escolhe,em qual tipo de número será usado 

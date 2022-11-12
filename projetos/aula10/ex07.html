@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números - aula de DOM</title>
+</head>
+<body>
+     <h1>Cálculos com dois números</h1>
+
+     Número Um: <input type="number" name="Num1" id="Num1">
+     Número Dois: <input type="number" name="Num2" id="Num2">
+    <div id="result"></div>
+     <br>
+     <input type="button" value="Somar" name="somar" onclick="Somar()">
+
+<script>
+    // events
+
+    function Somar(){
+ 
+    var num1 = window.document.getElementById('Num1')
+    var num2 = window.document.querySelector('input#Num2')
+    var res = window.document.getElementById('result') 
+
+    var n1 = Number(num1.value) /* Aqui observamos um exemplo de manipulação de dados*/
+    var n2 = Number(num2.value)
+    var s = n1 + n2
+    res.innerText= 'A Soma entre ' + n1 +' e ' + n2 + ' é igual a ' + s
+
+    }
+
+    </script>
+</body>
+</html>
